@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { banner1 } from "@/assets/assets";
 
 const LandingPage = () => {
   const [longUrl, setLongUrl] = useState("");
@@ -38,7 +39,7 @@ const LandingPage = () => {
           Shorten
         </Button>
       </form>
-      <img src="/cards.jpg" alt="banner" className="w-full my-11 md:px-11" />
+      <img src={banner1} alt="banner" className="w-full my-11 md:px-11" />
       <Accordion type="multiple" collapsible="true" className="w-full md:px-11">
         <AccordionItem value="item-1">
           <AccordionTrigger>

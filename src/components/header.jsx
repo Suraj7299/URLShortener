@@ -10,13 +10,14 @@ import {
 } from "./ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { LinkIcon, LogOut } from "lucide-react";
+import { lo } from "@/assets/assets";
 const Header = () => {
   const navigate = useNavigate();
   const user = false;
   return (
     <nav className="py-4 flex justify-between items-center">
       <Link to="/">
-        <img src="cards.jpg" className="h-16" alt="cards" />
+        <img src={lo} className="h-16" alt="cards" />
       </Link>
       <div>
         {!user ? (
